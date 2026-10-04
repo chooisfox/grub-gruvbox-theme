@@ -1,0 +1,64 @@
+# GRUB Theme - Terminal / TUI Edition
+
+title-text: ""
+desktop-color: "#282828"
+terminal-font: "TerminusRegular Regular 16"
+
++ label {
+    text = "BOOT MENU"
+    font = "TerminusBold Bold 16"
+    color = "#282828" 
+    align = "center"
+    
+    left = 32%
+    width = 36%
+    top = 37%-23
+    height = 20 
+}
+
++ image {
+    file = "assets/style/image_bg.png"
+    
+    left = 32%
+    width = 36%
+    top = 37%-30
+    height = 30
+}
+
++ boot_menu {
+    width = 36%
+    left = 32%
+    top = 37% 
+    height = 25%
+
+    item_font = "TerminusRegular Regular 16"
+    item_color = "#ebdbb2"        
+    selected_item_color = "#282828" 
+    
+    item_height = 20
+    item_padding = 0
+    item_icon_space = 0
+    item_spacing = 0
+
+    icon_width = 8
+    item_icon_space = 0
+
+    menu_pixmap_style = "assets/style/box_*.png"
+    
+    selected_item_pixmap_style = "assets/style/select_*.png"
+}
+
++ progress_bar {
+    id = "__timeout__"
+
+    width = 36%
+    left = 32%
+    top = 62%+8
+    height = 10
+
+    bar_style = "assets/style/bar_*.png"
+    
+    highlight_style = "assets/style/select_*.png" 
+    
+    text = ""
+}
